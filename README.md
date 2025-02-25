@@ -21,7 +21,8 @@ A **dynamic travel planning web application** where users can search for destina
 
 ## **Planned Features**
 
-**Best Places to Stay & Booking Info** – Provide users with recommended hotels, stays, and booking options.  
-**Trending Destinations** – Show popular travel locations on the dashboard for easy discovery.  
-**Optimize & Cache Using SSR** – Use **Server-Side Rendering (SSR)** to cache API responses and improve performance.  
+- **Best Places to Stay & Booking Info** – Provide users with recommended hotels, stays, and booking options.  
+- **Trending Destinations** – Show popular travel locations on the dashboard for easy discovery.  
+- **Optimize & Cache Using SSR** – Use **Server-Side Rendering (SSR)** to cache API responses and improve performance.
+- Deploy in vercel
 
