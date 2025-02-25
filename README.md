@@ -24,5 +24,8 @@ A **dynamic travel planning web application** where users can search for destina
 - **Best Places to Stay & Booking Info** – Provide users with recommended hotels, stays, and booking options.  
 - **Trending Destinations** – Show popular travel locations on the dashboard for easy discovery.  
 - **Optimize & Cache Using SSR** – Use **Server-Side Rendering (SSR)** to cache API responses and improve performance.
-- Deploy in vercel
+- Integrate Spring boot
+- Implement JWT authentication
+- Mock a payment gateway
+- Deploy in vercel and render
 
