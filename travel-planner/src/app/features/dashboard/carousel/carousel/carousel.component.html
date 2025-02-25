@@ -1,0 +1,25 @@
+<div class="relative w-full m-8 mx-auto">
+  <!-- Carousel slides container -->
+  <div class="overflow-hidden relative h-[80vh] rounded-lg">
+    <div *ngFor="let destination of destinations; let i = index"
+      class="absolute inset-0 transition-opacity duration-700 "
+      [ngClass]="{ 'opacity-100': i === currentIndex, 'opacity-0': i !== currentIndex }">
+      <img [src]="destination.imageUrl" [alt]="destination.title" class="w-full h-full object-cover object-center" />
+      <!-- Overlay with destination info -->
+      <div class="absolute top-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+        <h2 class="text-white text-xl font-bold">{{ destination.title }}</h2>
+        <p class="text-white text-sm">{{ destination.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <button (click)="prevSlide()"
+    class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-r focus:outline-none">
+    Prev
+  </button>
+  <button (click)="nextSlide()"
+    class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-l focus:outline-none">
+    Next
+  </button>
+</div>
